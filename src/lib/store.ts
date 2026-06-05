@@ -49,7 +49,7 @@ interface InventoryState {
 
 export const useInventoryStore = create<InventoryState>()(
   persist(
-    (set, get) => ({
+    (set) => ({
       user: null,
       products: initialProducts,
       suppliers: initialSuppliers,
